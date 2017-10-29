@@ -1,0 +1,3 @@
+oc_test_homepage:
+    path:     /
+    defaults: { _controller: OCTestBundle:Default:index }

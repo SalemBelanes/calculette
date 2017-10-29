@@ -1,0 +1,14 @@
+C:\wamp\www\Symfony>php bin/console generate:bundle
+php bin/console cache:clear
+
+**creation bd
+php bin/console doctrine:database:create
+*** generate entite
+php bin/console doctrine:generate:entity
+
+***Mise à jour entities getter /setter**
+php bin/console doctrine:generate:entities OCPlateformeBundle:Image
+**creation des tables
+php bin/console doctrine:schema:update --dump-sql
+**validation de la mis eà jour bd
+php bin/console doctrine:schema:update --force

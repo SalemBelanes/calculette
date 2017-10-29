@@ -1,0 +1,12 @@
+oc_test:
+    resource: "@OCTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+oc_plateforme:
+    resource: "@OCPlateformeBundle/Resources/config/routing.yml"
+    prefix:   /platform
+
+bi_calculette:
+    resource: "@BICalculetteBundle/Resources/config/routing.yml"
+    prefix:   /
+

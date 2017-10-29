@@ -1,0 +1,12 @@
+bi_calculette_homepage:
+    path:     /projet
+    defaults: { _controller: BICalculetteBundle:Default:index }
+advert_view:
+    path:     /advert
+    defaults: { _controller: BICalculetteBundle:Advert:index }    
+projet_view:
+    path:     /projet/view/{id}
+    defaults: { _controller: BICalculetteBundle:Projet:index }
+projet_add:
+    path:     /projet/add/{id}
+    defaults: { _controller: BICalculetteBundle:Projet:add }

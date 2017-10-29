@@ -1,0 +1,43 @@
+oc_platform_home:
+    path:      /{page}
+    defaults:
+        _controller: OCPlateformeBundle:Advert:index
+        page: 1
+    requirements:
+        page: \d*
+    
+
+oc_platform_view:
+    path:      /advert/{id}
+    defaults:
+        _controller: OCPlateformeBundle:Advert:view
+    requirements:
+        id: \d+
+
+oc_platform_add:
+    path:      /add
+    defaults:
+        _controller: OCPlateformeBundle:Advert:add
+        
+oc_platform_edit:
+    path:      /edit/{id}
+    defaults:
+        _controller: OCPlateformeBundle:Advert:edit
+    requirements:
+        id: \d+
+        
+oc_platform_delete:
+    path:      /delete/{id}
+    defaults:
+        _controller: OCPlateformeBundle:Advert:delete
+    requirements:
+        id: \d+
+    
+oc_platform_view_slug:
+    path:      /{year}/{slug}.{format}
+    defaults:
+        _controller: OCPlateformeBundle:Advert:viewSlug
+        format: html
+    requirements:
+        year:   \d{4}
+        format: html|xml

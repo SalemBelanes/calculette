@@ -1,0 +1,21 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/addd.html.twig #}
+
+{% extends "OCPlateformeBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier une annonce - {{ parent() }}
+{% endblock %}
+
+{% block ocplatform_body %}
+
+  <h2>Ajouter une annonce</h2>
+
+  {{ include("OCPlateformeBundle:Advert:form.html.twig") }}
+
+  <p>
+C'est une nouvelle annonce
+  </p>
+
+
+
+{% endblock %}
